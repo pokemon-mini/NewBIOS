@@ -1,0 +1,7 @@
+
+src/bios.asm
+*.obj
+src/jump_table.asm
+src/imgdata.asm
+*.map
+*.out
