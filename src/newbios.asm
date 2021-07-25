@@ -175,7 +175,6 @@ checkloop:
 	INC IX
 	INC IY
 	DJR NZ, checkloop
-	RET
 checkfail:
 	RET
 nintendo_string:
