@@ -1,7 +1,7 @@
 TOOLCHAIN_DIR := ../..
 TARGET = bios
 
-NEWBIOS := 1
+NEWBIOS := 0
 
 MEM = s
 

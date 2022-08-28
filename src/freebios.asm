@@ -168,8 +168,19 @@ checkcartridge:
 	LD A, [2100h]
 	CP A, #4Dh
 	RET
+	;LD A, [2101h]
+	;CP A, #4Eh
+	;RET
 	DB 0CEh,  0D0h,  01h,  21h,  32h,  4Eh,  0F8h
-; ...this check is completely broken
+; ...this check is completely broken, it should have been
+;checkcartridge:
+;	LD A, [2100h]
+;	CP A, #4Dh
+;	JRS NZ, checkfail
+;	LD A, [2101h]
+;	CP A, #4Eh
+;checkfail:
+;	RET
 
 ; Draw FreeBIOS logo (FreeBIOS)
 freebioslogo:
